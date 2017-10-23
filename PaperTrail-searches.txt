@@ -1,0 +1,1 @@
+":: Time:" AND -("Time:      " OR "Time:     " OR "Time:    " OR "total time:")
