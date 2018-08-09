@@ -1,0 +1,23 @@
+#alias mysql=/usr/local/mysql/bin/mysql
+#export PS1='\u@\H:\w$ '
+#export MAVEN_OPTS="-Xmx8000m -XX:MaxPermSize=1024m"
+
+#Java
+#export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home"
+#export JAVA_HOME="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home"
+
+#Tomat
+#export CATALINA_HOME="/Applications/apache-tomcat-6.0.43"
+#export CATALINA_HOME="/Applications/apache-tomcat-7.0.54"
+#export CATALINA_HOME="/Applications/apache-tomcat-rice-7.0.68"
+#export CATALINA_HOME="/Applications/apache-tomcat-rice-kuali-7.0.68"
+
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+ 
+#PS1="\[\e[31m\]\$(parse_git_branch)\[\e[m\]\h:\W \$ \[\e[m\]"
+PS1="\[\e[31m\]\$(parse_git_branch)\[\e[m\]\u@\H:\w$ "
+export PS1
+
