@@ -1,0 +1,5 @@
+rsync -rv --ignore-existing --delete /cygdrive/c/Users/Jay/Music jay@ubuntu-server:/extra_drive/media
+rsync -rv --ignore-existing --delete /cygdrive/c/Users/Jay/Videos jay@ubuntu-server:/extra_drive/media
+rsync -rv --ignore-existing --delete /cygdrive/c/Users/Jay/Pictures jay@ubuntu-server:/extra_drive/media
+
+scp jay@ubuntu-server:/home/jay/downloadedVideos/* /cygdrive/c/Users/Jay/Videos/
